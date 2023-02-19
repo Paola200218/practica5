@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-size: 0cqw;">Formulario de registro - Mi web</title>
+    <style media="screen">
+         
+         input[type=submit] {
+    background-color: #96f897;
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 9px;
+    border-color: #b03eb4;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(150, 247, 163);
+}input[type=submit]:hover {
+      background-color: #fab4c5;
+         }
+         .container {
+        border: radius 5px;  
+        background-color: #b03eb4;
+      }
+
+      .col-25 {
+        border-radius: 5px;
+        background-color: rgb(198, 238, 146);
+        padding: 20px;
+        
+      }
+
+      
+    </style>
+</head>
+
+<body  style="background-color: rgb(247, 226, 200);">
+    <form class="form" method="get" action="Procesos.php">
+    <center>
+        <h2 style="border:0lvw;color: rgb(79, 30, 124); font-size: xx-large ;">Formulario de registro- Mi web</h2>
+        
+              <fieldset style="border: 0cap;background-color: azure;">
+                <img src="img/foto.jpg" width="90" height="85"><br>   
+                   Nombre:
+                        <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre aquí" autocomplete="on" required size="50">
+                
+                    <br>
+                    <label for="Apellido"> Apellido:
+                        <input type="text" name="apellido" id="apellido" placeholder="escribe tu apellido aquí" required size="50">
+                    </label>
+                    <br>
+                    <br>
+
+                    <radiogroup>
+                        <label for="sexo">Sexo:</label>
+                        <br>
+                        <input type="radio" id="sexo" name="sexo" value="hombre" autofocus checked> Masculino <br>
+                        <input type="radio" id="sexo" name="sexo" value="mujer"> Femenino<br>
+           
+              <br>
+            
+              <b><label style="color: rgb(11, 10, 107);">
+                  Aceptar terminos: <br>
+                  <input type="checkbox" value="php" checked> Deseo recibir información sobre novedades y 
+                  ofertas <br><br>
+                  <input type="checkbox" value="php" > Declaro haber leído y aceptar las condiciones 
+                  generales del programa y la normativva sobre protección de datos <br><br>
+                  <input type="checkbox" value="php" > Deseo recibir información sobre novedades y 
+                  ofertas <br>
+                </b>   
+             <br><br>
+              <label > Población
+                <input list="poblacion" name="lugar" /></label>
+              </label>
+              <datalist id="poblacion">
+                  <option value="ORIZABA">
+                  <option value="CORDOBA">
+                  <option value="XALAPA">
+                  <option value="VERACRUZ">
+              </datalist>
+              <br>
+                
+                  <br> 
+                  <input type="submit"  value="enviar">
+            </fieldset>
+      </form>
+ </center>
+  
+</body>
+
+</html>
